@@ -1,0 +1,237 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'DM Sans', sans-serif;
+    width: 1111px;
+    color: #696871;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    align-items: center;
+    font-size: 15px;
+    font-weight: bold;
+    height: 60px;
+}
+.header-links{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+.header-links > li{
+    height: 50px;
+    margin: 0 25px;
+    display: flex;
+    align-items: center;
+}
+.header-links > li > a{
+    text-decoration: none;
+    color: #696871;
+    transition: 0.25 ease;
+
+    display: inline-block;
+    padding: 10px 0;
+    position: relative;
+}
+.header-links > li > a::after{
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #5454D4;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+.header-links > li > a:hover::after{
+    color: #19191B;
+    width: 100%; 
+    left: 0; 
+}
+.header-btn{
+    text-decoration: none;
+    color: #fff;
+    background-color: #FF7143;
+    padding: 20px 60px;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+.header-btn:hover{
+    filter: brightness(0.95);
+}
+main{
+    margin-top: 100px;
+}
+.hero-screen{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 25px;
+}
+.hero-descrip{
+    margin-top: 90px;
+    width: 460px;
+}
+.hero-descrip h1{
+    margin: 0;
+    font-size: 80px;
+    font-weight: bold;
+    letter-spacing: -2.5px;
+    line-height: 77px;
+    color: #19191B;
+}
+.hero-descrip p{
+    font-style: 'Mulish', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 30px;
+    letter-spacing: -0.5px;
+    margin: 30px 0 50px 0;
+}
+.hero-btns{
+    display: flex;
+}
+.descrip-btn{
+    text-decoration: none;
+    color: #fff;
+    background-color: #5454D4;
+    padding: 20px 60px;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    transition: 0.25s ease;
+}
+.descrip-btn:hover{
+    filter: brightness(0.95);
+}
+.arrow-btn{
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin-left: 40px;
+    border: 1px solid #E7E7E7;
+    border-radius: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: 0.25s ease;
+    background-image: url(../img/arrow-down.svg);
+    transition: 0.3s ease;
+}
+.arrow-btn:hover{
+    background-color: #E7E7E7;
+}
+.hero-img{
+    width: 610px;
+    height: 644px;
+    margin-right: -54px;
+}
+.mid-logos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0 150px 0;
+    padding: 0 20px;
+}
+.stud-screen{
+    display: flex;
+    padding: 0 20px;
+    margin-bottom: 80px;
+}
+.stud-descrip{
+    margin: 120px 100px 0 150px;
+}
+.descrip-headline{
+    margin: 0;
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: -1.5px;
+    line-height: 57px;
+    color: #19191B;
+}
+.descrip-descrip{
+    font-style: 'Mulish', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 30px;
+    letter-spacing: -0.5px;
+    margin: 30px 0;
+    width: 460px;
+}
+.learn-btn{
+    text-decoration: none;
+    font-size: 17px;
+    color: #5454d4;
+    font-weight: bold;
+}
+.prof-descrip{
+    margin: 120px 100px 0 0;
+}
+.prof-screen{
+    display: flex;
+    padding: 0 20px;
+    margin-bottom: 140px;
+}
+.features-screen{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+.feature-img{
+    width: 150px;
+    height: auto;
+    margin-bottom: 7px;
+}
+.feature{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 310px;
+}
+.feature-title{
+    margin: 0 0 20px 0;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: -0.75px;
+    color: #19191B;
+}
+.feature-descr{
+    margin: 0 0 160px 0;
+    font-family: 'Mulish', sans-serif;
+    font-size: 16;
+    text-align: center;
+    letter-spacing: -0.5px;
+    line-height: 24px;
+    color: #696871;
+}
+.price-header{
+    display: flex;
+    justify-content: space-between;
+}
+.price-headline{
+    margin: 0;
+    width: 520px;
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: -1.9px;
+    line-height: 70px;
+    color: #19191B;
+}
+.annual-btn{
+    text-decoration: none;
+    color: #fff;
+    background-color: #5454D4;
+    padding: 20px 60px;
+    border-radius: 10px 0 0 10px;
+    font-size: 17px;
+    font-weight: bold;
+    transition: 0.25s ease;
+}
+.annual-btn::after{
+}
