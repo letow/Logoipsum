@@ -170,6 +170,9 @@ main{
     color: #5454d4;
     font-weight: bold;
 }
+.learn-btn:hover{
+    filter: brightness(0.9);
+}
 .prof-descrip{
     margin: 120px 100px 0 0;
 }
@@ -213,6 +216,8 @@ main{
 .price-header{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
 }
 .price-headline{
     margin: 0;
@@ -233,5 +238,114 @@ main{
     font-weight: bold;
     transition: 0.25s ease;
 }
-.annual-btn::after{
+.ym-choice{
+    display: none;
+}
+.annual-change{
+    background-color: #F7F7FB;
+    padding: 25px 5px;
+    padding-right: 10px;
+    border-radius: 10px;
+}
+.annual-change label{
+    margin-right: -5px;
+    padding: 20px 60px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    color: #19191B;
+    transition: 0.3s ease;
+}
+#ym-lbl1{
+    border-radius: 10px 0 0 10px; 
+}
+#ym-lbl2{
+    border-radius: 0 10px 10px 0;
+}
+.ym-choice:checked + label{
+    background-color: #5454D4;
+    color: #fff;
+}
+.price-plans{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    margin-bottom: 150px;
+}
+
+.price-starter{
+    display: flex;
+    flex-direction: column;
+    background-color: #F8F8F8;
+    border-radius: 10px;
+    padding: 35px 25px 27px;
+}
+.price-title{
+    margin: 0 0 25px 0;
+    font-size: 18px;
+    line-height: 28px;
+}
+.price-price{
+    margin: 0 0 30px 0;
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    line-height: 58px;
+    color: #1D293F;
+}
+.price-btn{
+    text-decoration: none;
+    color: #5454D4;
+    background-color: #fff;
+    padding: 18px 95px;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+.price-btn:hover{
+    filter: brightness(0.92);
+}
+.price-descr{
+    margin: 0 0 70px 0;
+    font-family: 'Mulish', sans-serif;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 50px;
+}
+.price-premium{
+    display: flex;
+    flex-direction: column;
+    background-color: #FF7143;
+    border-radius: 10px;
+    padding: 50px 35px 45px;
+    color: #fff;
+}
+.price-block{
+    margin-bottom: 30px;
+}
+.price-block h1, h2{
+    display: inline;
+}
+.price-premium h1{
+    color: #fff;
+}
+.price-mid-btn{
+    text-decoration: none;
+    color: #fff;
+    background-color: #9F3919;
+    padding: 18px 100px;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+.price-mid-btn:hover{
+    filter: brightness(1.1);
+}
+.price-starter .price-block h2{
+    font-size: 28px;
+    color: #1D293F;
 }

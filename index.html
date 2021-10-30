@@ -9,6 +9,26 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Mulish:wght@200&display=swap" rel="stylesheet">
+  <script>
+    function eeee() {
+        const rbs = document.querySelectorAll('input[name="sub-choice"]');
+        let selectedValue;
+        for (const rb of rbs) {
+            if (rb.checked) {
+                selectedValue = rb.value;
+                break;
+            }
+        }
+        if(selectedValue == "m"){
+          document.getElementById('hprem').innerText = '$39';
+          document.getElementById('henter').innerText = '$59';
+        }
+        else{
+          document.getElementById('hprem').innerText = '$29';
+          document.getElementById('henter').innerText = '$49';
+        }
+    };
+  </script>
 </head>
 <body>
     <header>
@@ -91,8 +111,34 @@
         <div class="price-header">
           <h1 class="price-headline">Get the right plan for future product.</h1>
           <div class="annual-change">
-            <a href="#" class="annual-btn">Yearly</a>
-            <a href="#" id="monthly-btn"></a>
+            <input type="radio" name="sub-choice" class="ym-choice" id="sub-choice1" value="y" checked onclick="eeee()">
+            <label for="sub-choice1" id="ym-lbl1">Yearly</label>
+            <input type="radio" name="sub-choice" class="ym-choice" id="sub-choice2" value="m" onclick="eeee()">
+            <label for="sub-choice2" id="ym-lbl2">Monthly</label>
+          </div>
+        </div>
+        <div class="price-plans">
+          <div class="price-starter">
+            <p class="price-title">Starter</p>
+            <h1 class="price-price">Free</h1>
+            <p class="price-descr">1 Website<br>5 GB Hosting<br>Limited Support</p>
+            <a href="#" class="price-btn">Get Started</a>
+          </div>
+          <div class="price-premium">
+            <p class="price-title">Premium</p>
+            <div class="price-block">
+              <h1 class="price-price" id="hprem">$29</h1><h2>/month</h2>
+            </div>
+            <p class="price-descr">10 Website<br>15 GB Hosting<br>Premium Support</p>
+            <a href="#" class="price-mid-btn">Get Started</a>
+          </div>
+          <div class="price-starter">
+            <p class="price-title">Enterprise</p>
+            <div class="price-block">
+              <h1 class="price-price" id="henter">$49</h1><h2>/month</h2>
+            </div>
+            <p class="price-descr">Unlimited Website<br>50 GB Hosting<br>Premium Support</p>
+            <a href="#" class="price-btn">Get Started</a>
           </div>
         </div>
       </div>
